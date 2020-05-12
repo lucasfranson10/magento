@@ -1,11 +1,11 @@
-define([
+require([
     "jquery",
-], function($){
-        "use strict";
-        return function(config, element) {
-            config.message.select();
-            document.execCommand("copy");
-            alert("Copied the text: " + config.message);
-        }
+],function($){
+   // $('#order_myaction').on('click', clipboard());
+    function clipboard(message){
+        message.select();
+        document.execCommand("copy");
+        alert("Copied the text: " + message);
     }
-)
+    window.clipboard = clipboard;
+});
