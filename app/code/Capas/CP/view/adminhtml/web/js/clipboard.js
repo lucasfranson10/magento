@@ -1,8 +1,5 @@
 define([
     "jquery",
-    'jquery/ui',
-    'Magento_Ui/js/modal/modal',
-    'mage/translate'
 ], function($){
         "use strict";
         return function(config, element) {

@@ -1,16 +1,15 @@
 var config = {
-   /*  paths: {
-        'js-file-alias': 'Capas_CP/js/js-file-name'
+    map: {
+        '*': {
+            clipboard: 'Capas_CP/js/clipboard',
+        }
+    }, 
+    paths: {
+        'js-file-alias': 'Capas_CP/js/clipboard'
     },
     shim: {
         'js-file-alias': {
             deps: ['jquery']
         }
-    }
- */
-    map: {
-        '*': {
-            'clipboard': 'Capas_CP/js/clipboard',
-        }
-    }
+    }   
 };
