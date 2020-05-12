@@ -30,12 +30,12 @@ class OrderView
         $shipStr = $shipping->getStreet();
         $region = $shipping->getRegion(); 
        
-        $message = "copy: " . $firstname . ", " .  $shipStr[0];
+        $message = $firstname . ' ' . $lastName . '\n'.  $shipStr[0] . '\n' . $postCode . ' ' . $region;
         
         $view->addButton(
             'order_myaction',
             [
-                'label' => __('Copy Paste'),
+                'label' => __('Copy address'),
                 'class' => 'myclass',
                 'onclick' => "clipboard('{$message}')"
             ]

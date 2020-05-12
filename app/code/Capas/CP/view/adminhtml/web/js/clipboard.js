@@ -9,7 +9,7 @@ require([
         dummy.select();
         document.execCommand("copy");
         document.body.removeChild(dummy);
-        alert("Copied the text: " + message);
+        alert("Copied text: " + message);
     }
     window.clipboard = clipboard;
 });
