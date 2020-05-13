@@ -1,5 +1,6 @@
 require([
     "Magento_Ui/js/modal/alert",
+    "Magento_Ui/js/model/messageList",
     "jquery", 
 ],function(alert, $){
    // $('#order_myaction').on('click', clipboard());
@@ -12,7 +13,7 @@ require([
         document.body.removeChild(dummy);
         //alert("Copied text: " + message);
         alert({
-            title: $.mage.__('The address was copy: '),
+            title: $.mage.__('The address was copied: '),
             content: $.mage.__(message),
 
         });
