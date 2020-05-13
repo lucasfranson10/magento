@@ -1,6 +1,6 @@
 require([
     "jquery",
-    "Magento_Ui/js/model/messageList" 
+    /* "Magento_Ui/js/model/messageList"  */
 ],function($){
  
     function clipboard(message){
