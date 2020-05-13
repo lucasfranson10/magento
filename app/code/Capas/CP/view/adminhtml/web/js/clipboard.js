@@ -1,9 +1,7 @@
 require([
-    "Magento_Ui/js/modal/alert",
-    "Magento_Ui/js/model/messageList",
     "jquery", 
-],function(alert, $){
-   // $('#order_myaction').on('click', clipboard());
+],function($){
+ 
     function clipboard(message){
         var dummy = document.createElement("textarea");
         document.body.appendChild(dummy);
@@ -11,12 +9,9 @@ require([
         dummy.select();
         document.execCommand("copy");
         document.body.removeChild(dummy);
-        //alert("Copied text: " + message);
-        alert({
-            title: $.mage.__('The address was copied: '),
-            content: $.mage.__(message),
 
-        });
+
     }
     window.clipboard = clipboard;
+    
 });
