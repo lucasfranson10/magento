@@ -225,15 +225,14 @@ return [
         'Amazon_Core' => 1,
         'Amazon_Login' => 1,
         'Amazon_Payment' => 1,
-        'Capas_CP' => 1,
         'Dotdigitalgroup_Email' => 1,
         'Klarna_Core' => 1,
         'Klarna_Ordermanagement' => 1,
         'Klarna_Kp' => 1,
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
+        'Skrey_copypaste' => 1,
         'Temando_Shipping' => 1,
-        'Vertex_Tax' => 1,
-        'copyPaste' => 1
+        'Vertex_Tax' => 1
     ]
 ];
